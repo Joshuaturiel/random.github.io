@@ -1,1 +1,17 @@
-# random.github.io
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="document.getElementById('demo').innerHTML = a[getRndInteger(0,a.length - 1)]">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+a = ['Abouhamra', 'Bueno', 'Foà', 'Hallac', 'Hassan', 'Katri',  'Kohanim','Liuim', 'Loloey', 'Rimini', 'Sassoon', 'Sazbon', 'Somech', 'Turiel', 'Zelnick']
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+</script>
+
+</body>
+</html>
