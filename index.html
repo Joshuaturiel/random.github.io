@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
+<style>
+  
+  h1  {
+   font-family: Brush Script MT, Brush Script Std, cursive	;
+</style>
 <body>
+<h1> direi che oggi chiamiamo qualcuno alla lavagna </h1>
+<button onclick="document.getElementById('numero').innerHTML = a[randomnumber(0,a.length - 1)]">INTERROGHIAMO</button>
 
-<button onclick="document.getElementById('demo').innerHTML = a[getRndInteger(0,a.length - 1)]">INTERROGHIAMO</button>
-
-<p id="demo"></p>
+<p id="numero"></p>
 
 <script>
 a = ['Abou Hamrah', 'Bueno', 'Foà', 'Hallac', 'Hassan', 'Katri',  'Kohanim','Liuim', 'Loloey', 'Rimini', 'Sassoon', 'Sazbon', 'Somekh', 'Turiel', 'Zelnick']
-function getRndInteger(min, max) {
+function randomnumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 </script>
 
 </body>
 </html>
+
